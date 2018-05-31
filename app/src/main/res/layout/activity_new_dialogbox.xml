@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewDialogbox">
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="First name" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnChangeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image" />
+
+
+    <EditText
+        android:id="@+id/lname"
+        android:hint="Last name"
+        android:layout_below="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:hint="DD/MM/YYY"
+        android:layout_below="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/genderET"
+        android:hint="Gender"
+        android:layout_below="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:hint="Email"
+        android:layout_below="@+id/genderET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/confirm_mail"
+        android:hint="Re-enter the email"
+        android:layout_below="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_below="@+id/confirm_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+     <Button
+         android:layout_alignParentBottom="true"
+         android:id="@+id/signup"
+         android:layout_centerHorizontal="true"
+         android:text="Signup"
+
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
